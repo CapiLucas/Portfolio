@@ -10,6 +10,7 @@
 .container{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .card{
     width: 243px;

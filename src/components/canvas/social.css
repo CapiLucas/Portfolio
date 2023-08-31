@@ -10,3 +10,11 @@
     color: aliceblue;
     font-size: 40px;
 }
+.animations{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-img img{
+    width: 100px;
+    height: 100px;
+}

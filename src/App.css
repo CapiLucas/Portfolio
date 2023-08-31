@@ -61,3 +61,39 @@ li a:hover{
 .main{
   background-color: #050816;
 }
+.navright {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;  
+}
+
+.fa-bars {
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  ul{
+    border: 1px solid aliceblue;
+    background: -webkit-linear-gradient(-90.13deg,#181b1b 1.9%,#434247 97.5%);
+    border-radius: 15px;
+    width: 120px;
+    top: 50px;
+    height: 110px;
+    position: absolute;
+  }
+  .navright ul {
+    display: none;
+
+  }
+  .navright.open ul {
+    display: block;
+  }
+}
