@@ -8,7 +8,7 @@ function Introduction() {
       <div className="information">
         <p className="intro">
           Introduction
-          <h1>About me:</h1>
+          <h1>About me</h1>
             I am a junior frontend developer who is focused on React for creating cool user interfaces.<br></br>
             Since I was 16 years old that interests me, I am in constant training and passionate about creating innovative solutions.<br></br>
             Let's work together on your next project.

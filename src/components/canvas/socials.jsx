@@ -9,12 +9,12 @@ function Social() {
         <div className='social-text'>
             <p>
             Connect with me
-            <h2>Social Links:</h2>
+            <h2>Social Links</h2>
             </p>
         </div>
        <div className='animations'>
             <div className='social-img'>
-                <a href="lucas7320030@hotmail.com"><img src="../images/mail.png" alt="mail" /></a>
+                <a href="mailto:lucas7320030@hotmail.com"><img src="../images/mail.png" alt="mail" /></a>
             </div>
             <div className='social-img'>
                 <a href="https://www.linkedin.com/in/lucas-torres-a56a8027a/" target='blank'><img src="../images/linkedin-social.png" alt="linkedin" /></a>

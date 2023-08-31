@@ -1,13 +1,8 @@
 .skills{
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-.skill-text{
-    font-size: 40px;
-    color: aliceblue;
-    text-align: left;
-    padding: 60px;
 }
 .skill-img{
     width: 12rem;

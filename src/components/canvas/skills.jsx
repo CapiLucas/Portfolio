@@ -4,7 +4,6 @@ import "./skills.css"
 function Skills() {
   return (
     <div>
-        <h2 className='skill-text'>Skills:</h2>
         <div className='skills'>
             <div className='html'>
                 <img className='skill-img' src="../images/html.png" alt="html"/>
