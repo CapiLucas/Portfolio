@@ -1,0 +1,94 @@
+.intro{
+    color: cadetblue;
+    text-align: left;
+    font-size: 20px;
+    padding: 60px;
+}
+.intro h1{
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 243px;
+    height: 283px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(-90.13deg,#00cea8 1.9%,#bf61ff 97.5%);
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.card:hover{
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+}
+.cardContent {
+    background-color: #151038;
+    width: 240px;
+    height: 280px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card3d{
+    justify-content: center;
+    align-items: center;
+    background-color: #151038;
+    border-radius: 20px;
+    width: 240px;
+    height: 280px;
+    opacity: 1;
+    display: none;
+}
+.cardContent img{
+    width: 6rem;
+    height: 4rem;
+}
+
+.card h2{
+    color: aliceblue;
+}
+.img3d {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    transition: 2s;
+}
+
+.card:hover .cardImage,
+.card:hover .cardContent,
+.card:hover .description {
+    display: none;
+}
+
+.card:hover .card3d {
+    display: flex;
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.card3d:hover .img3d {
+    top: 15px;
+    transform: scale(2.5);
+}
+.text3d{
+    position: absolute;
+    transition: 2s;
+}
+.card3d:hover .text3d {
+    transform: scale(1.5);
+}
+
+@media (max-width:425px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,17 @@
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-text{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: left;
+    padding: 60px;
+}
+.skill-img{
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(-90.13deg,#354240 1.9%,#3025c2 97.5%);
+}

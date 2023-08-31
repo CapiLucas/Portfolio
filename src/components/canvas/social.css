@@ -1,0 +1,12 @@
+.social-text{
+    text-align: left;
+    padding: 60px;
+}
+.social-text p{
+    color: cadetblue;
+    font-size: 20px;
+}
+.social-text h2{
+    color: aliceblue;
+    font-size: 40px;
+}
