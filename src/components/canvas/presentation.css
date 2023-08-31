@@ -57,7 +57,7 @@ div p{
 }
 @media (max-width:620px) {
   .canvaP img{
-    width: 16rem;
+    width: 15rem;
     height: 29rem;
   }
 }
@@ -72,7 +72,7 @@ div p{
     padding: 100px;
   }
   .canvaP img{
-    width: 12rem;
+    width: 11rem;
     height: 17rem;
   }
   @media (max-width:350px) {
