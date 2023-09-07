@@ -81,6 +81,7 @@
 .text3d{
     position: absolute;
     transition: 2s;
+    bottom: 80px;
 }
 .card3d:hover .text3d {
     transform: scale(1.5);
