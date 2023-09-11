@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   background-color: #050816;
-
 }
 .navbg{
   width: 100%;
@@ -35,6 +34,9 @@
 .name{
   font-size: 17px;
   font-weight: bold;
+}
+.subtext{
+  height: 92px;
 }
 .link-no-decoration {
   text-decoration: none;

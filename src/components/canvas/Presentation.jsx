@@ -43,7 +43,7 @@ function Presentation() {
               Lucas Torres
             </span>
           </h1>
-          <p>
+          <p className='subtext'>
             a {mainTypedText} <br />
             {lookTypedText}
           </p>
