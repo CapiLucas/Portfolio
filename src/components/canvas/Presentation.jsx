@@ -2,22 +2,34 @@ import React, { useState, useEffect, useRef } from 'react';
 import './presentation.css';
 
 function Presentation() {
-  const textToType = "  Frontend Developer take a look";
-  const [typedText, setTypedText] = useState('');
-  const charIndex = useRef(0);
+  const mainText = "  Frontend Developer";
+  const lookText = "  take a look";
+  const [mainTypedText, setMainTypedText] = useState('');
+  const [lookTypedText, setLookTypedText] = useState('');
+  const mainCharIndex = useRef(0);
+  const lookCharIndex = useRef(0);
 
   useEffect(() => {
-    const typingTimer = setInterval(() => {
-      if (charIndex.current < textToType.length) {
-        setTypedText((prevText) => prevText + textToType.charAt(charIndex.current));
-        charIndex.current += 1;
+    const mainTypingTimer = setInterval(() => {
+      if (mainCharIndex.current < mainText.length) {
+        setMainTypedText((prevText) => prevText + mainText.charAt(mainCharIndex.current));
+        mainCharIndex.current += 1;
       } else {
-        clearInterval(typingTimer);
+        clearInterval(mainTypingTimer);
+
+        const lookTypingTimer = setInterval(() => {
+          if (lookCharIndex.current < lookText.length) {
+            setLookTypedText((prevText) => prevText + lookText.charAt(lookCharIndex.current));
+            lookCharIndex.current += 1;
+          } else {
+            clearInterval(lookTypingTimer);
+          }
+        }, 100);
       }
     }, 100);
 
     return () => {
-      clearInterval(typingTimer);
+      clearInterval(mainTypingTimer);
     };
   }, []);
 
@@ -32,7 +44,8 @@ function Presentation() {
             </span>
           </h1>
           <p>
-            a {typedText}
+            a {mainTypedText} <br />
+            {lookTypedText}
           </p>
         </div>
         <div>
