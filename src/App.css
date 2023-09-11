@@ -28,6 +28,10 @@
   display: flex;
   align-items: center;
 }
+.titles{
+  font-size: 60px;
+  color: aliceblue;
+}
 .name{
   font-size: 17px;
   font-weight: bold;
@@ -36,7 +40,7 @@
   text-decoration: none;
   color: white; 
 }
-ul{
+.secciones{
   display: flex;
   align-items: center;
 }
@@ -52,7 +56,7 @@ li a{
   transition: 1s;
 }
 li a:hover{
-  color: yellowgreen;
+  color: deepskyblue;
 }
 .logo{
   height: 60px;
@@ -76,11 +80,24 @@ li a:hover{
   color: aliceblue;
 }
 
+.bluetext{
+  color: rgb(80, 102, 161)!important;
+}
+.greentext{
+  color: rgb(42, 122, 42)!important;
+}
+.orangetext{
+  color: rgb(231, 169, 55)!important;
+}
+.rosetext{
+  color: palevioletred!important;
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
-  ul{
+  .secciones{
     border: 1px solid aliceblue;
     background: -webkit-linear-gradient(-90.13deg,#181b1b 1.9%,#434247 97.5%);
     border-radius: 15px;
@@ -89,11 +106,19 @@ li a:hover{
     height: 110px;
     position: absolute;
   }
-  .navright ul {
+  .navright .secciones {
     display: none;
     right: 5px;
   }
-  .navright.open ul {
+  .navright.open .secciones {
     display: block;
+  }
+}
+@media (max-width: 500px){
+  .name{
+    font-size: 14px;
+  }
+  .titles{
+    font-size: 25px;
   }
 }

@@ -30,12 +30,12 @@ function Navbar() {
           <div className="menu-icon" onClick={toggleMenu}>
             <i class="fa-solid fa-bars"></i>         
           </div>
-          <ul>
+          <ul className="secciones">
             <li>
               <Link to={"./"}>Home</Link>
             </li>
             <li>
-              <Link to={"./work"}>Work</Link>
+              <Link to={"./experience"}>Experience</Link>
             </li>
             <li>
               <Link to={"./contact"}>Contact</Link>

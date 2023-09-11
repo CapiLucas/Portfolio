@@ -1,0 +1,90 @@
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.ProjectsContainer{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.Pbackground{
+    background-color: rgb(21 16 56);
+    width: 550px;
+    height: 435px;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.imgContainer img{
+    margin-top: 10px;
+    max-width: 95%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+}
+.technologies{
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+.technologies p{
+    margin-right: 5px;
+}
+.cardInfo h2{
+    color: aliceblue;
+    font-size: 30px;
+}
+.cardInfo p{
+    color: cadetblue;
+    font-size: 14px;
+}
+.texts{
+    display: flex;
+}
+.githubLink{
+    background-color: rgb(51, 51, 199);
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 199);
+    margin-right: 15px;
+}
+
+@media (max-width:760px) { 
+    .Pbackground{
+        width: 315px;
+        height: 335px;
+    }
+}
+@media (max-width:500px) { 
+    .cardInfo p{
+        font-size: 10px;
+    }
+    .technologies{
+        height: 60px;
+    }
+    .Pbackground{
+        width: 280px;
+        height: 300px;
+    }
+}
+
+@media (max-width:320px) { 
+    .cardInfo h2{
+        font-size: 12px;
+    }
+    .cardInfo p{
+        font-size: 8px;
+    }
+    .Pbackground{
+        height: 255px;
+    }
+}

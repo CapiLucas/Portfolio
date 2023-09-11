@@ -1,0 +1,110 @@
+.jorney {
+  text-align: left;
+  padding: 60px;
+}
+.jorney p {
+  font-size: 20px;
+  color: cadetblue;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.MuiTimeline-root{
+    width:230px
+}
+.titleTimeline{
+    font-size: 28px;
+}
+.PTimeline{
+    font-size: 25px;
+}
+.timelineDiv{
+    width: 310px;
+    background-color: rgb(29, 24, 54);
+    border-radius: 15px;
+    padding: 7px;
+}
+.timelineDiv ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media (max-width:760px) {
+    .titleTimeline{
+        font-size: 24px;
+    }
+    .PTimeline{
+        position: absolute;
+        bottom: 25px;
+        font-size: 40px;
+    }
+    .timelineDiv{
+        width: 272px;
+        height: 172px;
+    }
+    .titleTimeline{
+        font-size: 20px;
+    }
+
+}
+@media (max-width:660px) {
+    .timelineDiv{
+        width: 190px;
+        height: 160px;
+    }
+    .timelineDiv ul li{
+        font-size: 13px;
+    }
+    li{
+        margin-right: 15px;
+    }
+}
+@media (max-width:500px) {
+    .timelineDiv{
+        width: 150px;
+        height: 100px;
+    }
+    .jorney p {
+        font-size: 10px;
+    }
+    .titleTimeline{
+        font-size: 13px;
+    }
+    .PTimeline{
+        margin-top: 5px;
+        position: inherit;
+        font-size: 15px;
+    }
+    .timelineDiv ul li{
+        font-size: 9px;
+    }
+    li{
+        margin-right: 15px;
+    }
+}
+@media (max-width:415px) {
+    .timelineDiv{
+        width: 107px;
+        height: 65px;
+    }
+    .jorney p {
+        font-size: 10px;
+    }
+    .titleTimeline{
+        font-size: 8px;
+    }
+    .PTimeline{
+        margin-top: 5px;
+        position: inherit;
+        font-size: 15px;
+    }
+    .timelineDiv ul li{
+        font-size: 6px;
+    }
+    li{
+        margin-right: 15px;
+    }
+}
