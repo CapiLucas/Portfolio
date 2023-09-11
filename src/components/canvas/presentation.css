@@ -58,7 +58,7 @@ div p{
 @media (max-width:620px) {
   .canvaP img{
     width: 14rem;
-    height: 25rem;
+    height: 24rem;
   }
 }
 @media (max-width:430px) {
