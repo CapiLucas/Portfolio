@@ -63,6 +63,9 @@
         width: 315px;
         height: 335px;
     }
+    .cardInfo p{
+        font-size: 12gpx;
+    }
 }
 @media (max-width:500px) { 
     .cardInfo p{
