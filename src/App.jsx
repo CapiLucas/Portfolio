@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Experience from './components/pages/Experience';
 import Navbar from './components/header/navbar';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/experience' element={<Experience/>} />
+            <Route path='/contact' element={<Contact/>} />
           </Routes>
         </BrowserRouter>
       </div>

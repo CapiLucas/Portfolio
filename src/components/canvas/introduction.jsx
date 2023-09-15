@@ -6,7 +6,7 @@ function Introduction() {
   return (
     <div>
       <div className="information">
-        <p className="intro">
+        <p className="SecundaryText">
           Introduction
           <h1>About me</h1>
             I am a junior frontend developer who is focused on React for creating cool user interfaces.<br></br>
