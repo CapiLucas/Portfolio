@@ -66,7 +66,7 @@ const Scene = () => {
           scaleFactor = 0.4;
         }
         if (currentMount.clientWidth < 460) {
-          scaleFactor = 0.3;
+          scaleFactor = 0.4;
         }
         gltf.scene.scale.set(scaleFactor, scaleFactor, scaleFactor);
       },
