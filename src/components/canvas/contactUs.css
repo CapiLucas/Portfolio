@@ -1,14 +1,13 @@
 .canvaC {
   height: 100vh;
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-evenly;
   padding: 100px;
 }
 
 .formDiv {
-  width: 520px;
+  width: 400px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -17,11 +16,11 @@
   border-radius: 25px;
 }
 .formDiv p {
-    margin-left: 10px;
+  margin-left: 10px;
   color: cadetblue;
 }
-.formDiv h2{
-    margin-left: 10px;
+.formDiv h2 {
+  margin-left: 10px;
 }
 
 .field {
@@ -47,7 +46,9 @@
 }
 .field input {
   display: block;
+  width: 100vh;
   min-width: 275px;
+  max-width: 360px;
   line-height: 1.5;
   font-size: 14px;
   background-color: rgb(21 16 56);
@@ -74,4 +75,35 @@ input[type="submit"] {
   font-size: 14px;
   color: #fff;
   border: none;
+}
+@media (max-width:1070px) {
+  .canvaC {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+  }
+  .Contenedor3D{
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+@media (max-width:800px) {
+  .formDiv {
+    margin-top: 50px;
+  }
+  .canvaC{
+    padding: 0px;
+  }
+}
+@media (max-width:440px) {
+  .formDiv {
+    width: 300px;
+    height: 500px;
+  }
+  .field input {
+    width: 270px;
+  }
 }

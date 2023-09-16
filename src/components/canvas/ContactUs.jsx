@@ -3,6 +3,7 @@ import "./contactUs.css";
 import emailjs from "@emailjs/browser";
 import Scene from "./Scene";
 
+
 export const ContactUs = () => {
   const form = useRef();
 
@@ -33,17 +34,17 @@ export const ContactUs = () => {
         <h2 className="titles">CONTACT.</h2>
         <form ref={form} onSubmit={sendEmail} className="field">
           <label>Your Name</label>
-          <input type="text" name="user_name" />
+          <input type="text" name="user_name" placeholder="Enter your Name"/>
           <label>Your Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="user_email" placeholder="Enter your email"/>
           <label>Your Message</label>
-          <textarea name="message" />
+          <textarea name="message"  placeholder="Enter your message"/>
           <button type="submit" value="Send">
             Submit
           </button>
         </form>
       </div>
-      <Scene></Scene>
+      <Scene/>
     </div>
   );
 };
