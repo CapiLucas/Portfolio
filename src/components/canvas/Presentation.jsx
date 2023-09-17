@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './presentation.css';
 
 function Presentation() {
-  const mainText = "  Frontend Developer";
+  const mainText = "  Front-end Developer";
   const lookText = "  take a look";
   const [mainTypedText, setMainTypedText] = useState('');
   const [lookTypedText, setLookTypedText] = useState('');
