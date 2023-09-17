@@ -1,30 +1,42 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contactUs.css";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 import Scene from "./Scene";
-
 
 export const ContactUs = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false); // Nuevo estado para indicar si se está cargando
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    setLoading(true); // Mostrar indicador de carga
+
+    try {
+      const result = await emailjs.sendForm(
         "service_xj2dapj",
         "template_lkdt5yo",
         form.current,
         "eupftr61pLADvCePL"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
+
+      console.log(result.text);
+
+      // Mostrar mensaje de éxito
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Email sent successfully.",
+      });
+
+      // Reiniciar el formulario
+      form.current.reset();
+    } catch (error) {
+      console.error(error.text);
+    } finally {
+      setLoading(false); // Ocultar indicador de carga después de enviar el correo
+    }
   };
 
   return (
@@ -39,8 +51,8 @@ export const ContactUs = () => {
           <input type="email" name="user_email" placeholder="Enter your email"/>
           <label>Your Message</label>
           <textarea name="message"  placeholder="Enter your message"/>
-          <button type="submit" value="Send">
-            Submit
+          <button type="submit" value="Send" disabled={loading}>
+            {loading ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>
