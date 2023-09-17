@@ -1,72 +1,61 @@
 import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import SchoolIcon from "@mui/icons-material/School";
+import "./timeline.css";
 
 export default function CustomizedTimeline() {
   return (
     <div>
-      <Timeline position="alternate">
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="grey"
-          >
-            2021
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <SchoolIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <div className="timelineDiv">
-              <h2 className="titleTimeline">Instituto Jose Manuel Estrada</h2>
-              <p className="PTimeline">Finished </p>
+      <div class="timeline-wrapper">
+        <div class="center-line">
+          <a href="#" class="scroll-icon">
+            <i class="fas fa-caret-up"></i>
+          </a>
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas fa-home"></i>
+            <div class="details">
+              <span class="title">Instituto Jose Manuel Estrada</span>
+              <span>2021</span>
             </div>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="grey"
-          >
-            January 2023 - Today
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <LaptopMacIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <div className="timelineDiv">
-              <h2 className="titleTimeline">CoderHouse Course</h2>
-              <div>
-                <ul>
-                  <li>● Web Development</li>
-                  <li>● Javascript</li>
-                  <li>● React JS</li>
-                  <li>
-                    ● Backend <span>(</span>In progress<span>)</span>
-                  </li>
-                </ul>
-              </div>
+            <p className="TimelineP">
+              During my time in high school, I gained a solid academic
+              foundation covering a variety of subjects. This period was crucial
+              for my personal growth and development of fundamental skills.
+            </p>
+          </section>
+        </div>
+        <div class="row row-2">
+          <section>
+            <i class="icon fas fa-code"></i>
+            <div class="details">
+              <span class="title">Coderhouse Frontend course</span>
+              <span>Jan-Aug 2023 </span>
             </div>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+            <p className="TimelineP">
+              I completed a Front-end Development Course at Coderhouse, where I
+              gained valuable knowledge and hands-on experience in creating user
+              interfaces and interactive websites. This course equipped me with
+              the skills needed to design and optimize the user experience.
+            </p>
+          </section>
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas fa-file-code"></i>
+            <div class="details">
+              <span class="title">Coderhouse Backend course</span>
+              <span>Actually</span>
+            </div>
+            <p className="TimelineP">
+              Currently, I'm enrolled in a Backend Development Course at
+              Coderhouse. This program focuses on server-side programming,
+              databases, and other essential components that power web
+              applications. It's equipping me with the skills to handle the
+              logic and functionality behind web applications.
+            </p>
+          </section>
+        </div>
+      </div>
     </div>
   );
 }
