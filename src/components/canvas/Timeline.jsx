@@ -6,7 +6,7 @@ export default function CustomizedTimeline() {
     <div>
       <div class="timeline-wrapper">
         <div class="center-line">
-          <a href="#" class="scroll-icon">
+          <a href="./experience" class="scroll-icon">
             <i class="fas fa-caret-up"></i>
           </a>
         </div>
