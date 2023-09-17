@@ -42,6 +42,14 @@ const Scene = () => {
         scaleFactor = 0.2;
       }
       gltf.scene.scale.set(scaleFactor, scaleFactor, scaleFactor);
+
+      if (currentMount.clientWidth < 600) {
+        camera.zoom = 1;
+      } else {
+        camera.zoom = 0.7;
+      }
+
+      camera.updateProjectionMatrix();
     };
     window.addEventListener("resize", resize);
 
@@ -79,6 +87,12 @@ const Scene = () => {
 
     const animate = () => {
       Controls.update();
+
+      // Rotar el modelo
+      if (gltf) {
+        gltf.scene.rotation.y += 0.01; // Ajusta la velocidad de rotación según lo necesites
+      }
+
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     };
@@ -94,7 +108,7 @@ const Scene = () => {
     <div
       className="Contenedor3D"
       ref={mountRef}
-      style={{ width: "80%", height: "70%" }}
+      style={{ width: "65%", height: "70%" }}
     ></div>
   );
 };
