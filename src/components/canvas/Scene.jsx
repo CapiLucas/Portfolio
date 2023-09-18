@@ -88,9 +88,8 @@ const Scene = () => {
     const animate = () => {
       Controls.update();
 
-      // Rotar el modelo
       if (gltf) {
-        gltf.scene.rotation.y += 0.01; // Ajusta la velocidad de rotación según lo necesites
+        gltf.scene.rotation.y += 0.01;
       }
 
       renderer.render(scene, camera);
