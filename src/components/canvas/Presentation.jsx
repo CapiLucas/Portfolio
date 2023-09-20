@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './presentation.css';
 
 function Presentation() {
-  const mainText = "  Front-end Developer";
-  const lookText = "  take a look";
+  const mainText = "  Front-end Developer.";
+  const lookText = "  Take a look!";
   const [mainTypedText, setMainTypedText] = useState('');
   const [lookTypedText, setLookTypedText] = useState('');
   const mainCharIndex = useRef(0);

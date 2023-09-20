@@ -19,6 +19,7 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
+    position: relative;
 }
 .imgContainer img{
     margin-top: 10px;
@@ -29,6 +30,9 @@
 .cardInfo{
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 35%;
+    
 }
 .technologies{
     height: 85px;
@@ -77,6 +81,9 @@
     .Pbackground{
         width: 280px;
         height: 300px;
+    }
+    .cardInfo{
+        height: 50%;
     }
 }
 

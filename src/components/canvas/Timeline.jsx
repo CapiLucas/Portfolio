@@ -28,14 +28,14 @@ export default function CustomizedTimeline() {
           <section>
             <i class="icon fas fa-code"></i>
             <div class="details">
-              <span class="title">Coderhouse Frontend course</span>
+              <span class="title">Coderhouse Frontend certification</span>
               <span>Jan-Aug 2023 </span>
             </div>
             <p className="TimelineP">
-              I completed a Front-end Development Course at Coderhouse, where I
+              I completed a Front-end Development certification at Coderhouse, where I
               gained valuable knowledge and hands-on experience in creating user
-              interfaces and interactive websites. This course equipped me with
-              the skills needed to design and optimize the user experience.
+              interfaces and interactive websites. This certification equipped me with
+              the skills needed to design and optimize the user's experience.
             </p>
           </section>
         </div>
@@ -43,11 +43,11 @@ export default function CustomizedTimeline() {
           <section>
             <i class="icon fas fa-file-code"></i>
             <div class="details">
-              <span class="title">Coderhouse Backend course</span>
-              <span>Actually</span>
+              <span class="title">Coderhouse Backend certification</span>
+              <span>ongoing</span>
             </div>
             <p className="TimelineP">
-              Currently, I'm enrolled in a Backend Development Course at
+              Currently, I'm enrolled in a Backend Development certification at
               Coderhouse. This program focuses on server-side programming,
               databases, and other essential components that power web
               applications. It's equipping me with the skills to handle the

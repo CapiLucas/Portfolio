@@ -9,8 +9,8 @@ function Introduction() {
         <p className="SecundaryText">
           Introduction
           <h1>About me</h1>
-            I am a junior frontend developer who is focused on React for creating cool user interfaces.<br></br>
-            Since I was 16 years old that interests me, I am in constant training and passionate about creating innovative solutions.<br></br>
+            I am a junior Front-end Developer, mainly focusing on React, for creating cool user interfaces..<br></br>
+            Web design has interested me since I was 16. I am in constant training, and I'm passionate about creating innovative solutions.<br></br>
             Let's work together on your next project.
         </p>
       </div>
@@ -19,8 +19,8 @@ function Introduction() {
             <div className="cardContent">
                 <img className="cardImage" src="../images/responsive.png" alt="responsive" />
                 <h2 className="description">
-                    Responsive <br/>
-                    Desing
+                    Responsive  <br/>
+                    Design
                 </h2>
             </div>
             <div className="card3d">

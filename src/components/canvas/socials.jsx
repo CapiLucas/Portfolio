@@ -9,7 +9,7 @@ function Social() {
         <div className='social-text'>
             <p>
             Connect with me
-            <h2>Social Links</h2>
+            <h2>Reach me through:</h2>
             </p>
         </div>
        <div className='animations'>

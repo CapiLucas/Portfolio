@@ -43,7 +43,7 @@ export const ContactUs = () => {
     <div className="canvaC">
       <div className="formDiv">
         <p>Get in touch</p>
-        <h2 className="titles">CONTACT.</h2>
+        <h2 className="titles">Contact me:</h2>
         <form ref={form} onSubmit={sendEmail} className="field">
           <label>Your Name</label>
           <input type="text" name="user_name" placeholder="Enter your Name"/>
