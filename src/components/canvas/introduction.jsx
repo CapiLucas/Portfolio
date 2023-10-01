@@ -20,7 +20,7 @@ function Introduction() {
                 <img className="cardImage" src="../images/responsive.png" alt="responsive" />
                 <h2 className="description">
                     Responsive  <br/>
-                    Design
+                    Desing
                 </h2>
             </div>
             <div className="card3d">
